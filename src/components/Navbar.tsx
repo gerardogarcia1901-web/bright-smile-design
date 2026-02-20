@@ -14,12 +14,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-border/50" style={{ background: "linear-gradient(135deg, hsla(210, 10%, 15%, 0.92), hsla(210, 10%, 20%, 0.88))" }}>
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center">
-            <img src={logo} alt="Innova Dental" className="h-12 w-auto" />
+            <img src={logo} alt="Innova Dental" className="h-[3.75rem] w-auto" />
           </a>
 
           {/* Desktop Nav */}
@@ -28,7 +28,7 @@ const Navbar = () => {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="font-body text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
+                  className="font-body text-sm font-medium text-primary-foreground/70 hover:text-primary-bright transition-colors duration-300"
                 >
                   {item.label}
                 </a>
@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* Mobile toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-foreground"
+            className="md:hidden text-primary-foreground"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -63,7 +63,7 @@ const Navbar = () => {
                   <a
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="block font-body text-base text-muted-foreground hover:text-primary transition-colors"
+                    className="block font-body text-base text-primary-foreground/70 hover:text-primary-bright transition-colors"
                   >
                     {item.label}
                   </a>
