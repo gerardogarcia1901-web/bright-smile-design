@@ -15,10 +15,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 10% 15%;
 
-    --primary: 160 35% 35%;
+    --primary: 82 70% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --primary-bright: 160 50% 42%;
+    --primary-bright: 82 76% 55%;
     --primary-bright-foreground: 0 0% 100%;
 
     --secondary: 210 8% 93%;
@@ -27,15 +27,15 @@
     --muted: 210 8% 95%;
     --muted-foreground: 210 8% 45%;
 
-    --accent: 160 20% 90%;
-    --accent-foreground: 160 35% 25%;
+    --accent: 82 30% 90%;
+    --accent-foreground: 82 50% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 210 12% 88%;
     --input: 210 12% 88%;
-    --ring: 160 35% 35%;
+    --ring: 82 70% 45%;
 
     --radius: 0.75rem;
 
@@ -45,11 +45,11 @@
     --gray-elegant: 210 10% 30%;
 
     --overlay-dark: 210 15% 12%;
-    --overlay-green: 160 30% 18%;
+    --overlay-green: 82 40% 18%;
 
-    --gradient-service: linear-gradient(135deg, hsla(160, 35%, 30%, 0.85), hsla(210, 10%, 25%, 0.85));
-    --gradient-overlay: linear-gradient(to bottom, hsla(210, 15%, 12%, 0.7), hsla(160, 30%, 18%, 0.6));
-    --gradient-cta: linear-gradient(135deg, hsl(160, 35%, 25%), hsl(160, 40%, 30%));
+    --gradient-service: linear-gradient(135deg, hsla(82, 50%, 30%, 0.85), hsla(210, 10%, 25%, 0.85));
+    --gradient-overlay: linear-gradient(to bottom, hsla(210, 15%, 12%, 0.7), hsla(82, 40%, 18%, 0.6));
+    --gradient-cta: linear-gradient(135deg, hsl(82, 50%, 25%), hsl(82, 55%, 32%));
 
     --shadow-elegant: 0 10px 40px -12px hsla(210, 10%, 15%, 0.15);
     --shadow-card: 0 4px 20px -4px hsla(210, 10%, 15%, 0.1);
@@ -75,21 +75,21 @@
     --card-foreground: 210 20% 95%;
     --popover: 210 10% 12%;
     --popover-foreground: 210 20% 95%;
-    --primary: 160 40% 45%;
+    --primary: 82 70% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-bright: 160 50% 50%;
+    --primary-bright: 82 76% 58%;
     --primary-bright-foreground: 0 0% 100%;
     --secondary: 210 10% 18%;
     --secondary-foreground: 210 20% 90%;
     --muted: 210 10% 18%;
     --muted-foreground: 210 8% 60%;
-    --accent: 160 20% 18%;
-    --accent-foreground: 160 40% 80%;
+    --accent: 82 30% 18%;
+    --accent-foreground: 82 50% 80%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 210 10% 20%;
     --input: 210 10% 20%;
-    --ring: 160 40% 45%;
+    --ring: 82 70% 50%;
     --gray-dark: 210 10% 85%;
     --gray-medium: 210 8% 60%;
     --gray-light: 210 10% 15%;

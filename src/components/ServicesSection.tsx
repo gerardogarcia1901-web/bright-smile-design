@@ -68,7 +68,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, hsla(160, 35%, 30%, 0.85), hsla(210, 10%, 25%, 0.85))",
+            background: "linear-gradient(135deg, hsla(82, 50%, 30%, 0.85), hsla(210, 10%, 25%, 0.85))",
           }}
         />
         {/* Content */}

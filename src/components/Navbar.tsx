@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo-innova-dental.png";
 
 const navItems = [
   { label: "Inicio", href: "#inicio" },
@@ -16,11 +17,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo placeholder */}
-          <a href="#inicio" className="flex items-center gap-3">
-            <span className="text-2xl font-display font-bold text-primary">
-              DentalClinic
-            </span>
+          {/* Logo */}
+          <a href="#inicio" className="flex items-center">
+            <img src={logo} alt="Innova Dental" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Nav */}

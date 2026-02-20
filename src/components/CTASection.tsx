@@ -7,7 +7,7 @@ const CTASection = () => {
     <section
       className="py-24"
       style={{
-        background: "linear-gradient(135deg, hsl(160, 35%, 25%), hsl(160, 40%, 30%))",
+        background: "linear-gradient(135deg, hsl(82, 50%, 25%), hsl(82, 55%, 32%))",
       }}
     >
       <div
