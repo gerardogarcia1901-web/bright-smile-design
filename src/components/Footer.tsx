@@ -1,5 +1,4 @@
 import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
-import logo from "@/assets/logo-innova-dental.png";
 
 const Footer = () => {
   return (
@@ -12,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Innova Dental" className="h-14 w-auto" />
+            <h3 className="font-display text-xl font-bold text-primary-foreground">Innova Dental</h3>
             <p className="mt-4 font-body text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
               Odontología moderna con atención personalizada. Tu sonrisa, nuestra prioridad.
             </p>
