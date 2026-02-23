@@ -5,29 +5,6 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import clinicInterior from "@/assets/clinic-interior.webp";
 
-const contactInfo = [
-  {
-    icon: Phone,
-    label: "Teléfono",
-    value: "+1 (555) 123-4567",
-  },
-  {
-    icon: Mail,
-    label: "Correo Electrónico",
-    value: "info@dentalclinic.com",
-  },
-  {
-    icon: MapPin,
-    label: "Dirección",
-    value: "Av. Principal 1234, Centro Médico, Ciudad",
-  },
-  {
-    icon: Clock,
-    label: "Horario",
-    value: "Lunes a Viernes: 8:00 AM - 6:00 PM\nSábados: 9:00 AM - 2:00 PM",
-  },
-];
-
 const Contacto = () => {
   const formAnim = useScrollAnimation();
   const infoAnim = useScrollAnimation();
@@ -97,7 +74,7 @@ const Contacto = () => {
                   <input
                     type="tel"
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+503 0000-0000"
                   />
                 </div>
                 <div>
@@ -133,21 +110,67 @@ const Contacto = () => {
                 Información de Contacto
               </h2>
               <div className="space-y-8">
-                {contactInfo.map((info) => (
-                  <div key={info.label} className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <info.icon size={20} className="text-primary-bright" />
-                    </div>
-                    <div>
-                      <h4 className="font-body text-sm font-semibold text-foreground mb-1">
-                        {info.label}
-                      </h4>
-                      <p className="font-body text-sm text-muted-foreground whitespace-pre-line">
-                        {info.value}
-                      </p>
-                    </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Phone size={20} className="text-primary-bright" />
                   </div>
-                ))}
+                  <div>
+                    <h4 className="font-body text-sm font-semibold text-foreground mb-1">
+                      Teléfono
+                    </h4>
+                    <a
+                      href="tel:+50312345678"
+                      className="font-body text-sm text-muted-foreground hover:text-primary-bright transition-colors"
+                    >
+                      +503 1234-5678
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Mail size={20} className="text-primary-bright" />
+                  </div>
+                  <div>
+                    <h4 className="font-body text-sm font-semibold text-foreground mb-1">
+                      Correo Electrónico
+                    </h4>
+                    <a
+                      href="mailto:info@dentalclinic.com"
+                      className="font-body text-sm text-muted-foreground hover:text-primary-bright transition-colors"
+                    >
+                      info@dentalclinic.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <MapPin size={20} className="text-primary-bright" />
+                  </div>
+                  <div>
+                    <h4 className="font-body text-sm font-semibold text-foreground mb-1">
+                      Dirección
+                    </h4>
+                    <p className="font-body text-sm text-muted-foreground">
+                      Av. Principal 1234, Centro Médico, Ciudad
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Clock size={20} className="text-primary-bright" />
+                  </div>
+                  <div>
+                    <h4 className="font-body text-sm font-semibold text-foreground mb-1">
+                      Horario
+                    </h4>
+                    <p className="font-body text-sm text-muted-foreground">
+                      Lunes a Viernes: 8:00 AM - 6:00 PM
+                    </p>
+                    <p className="font-body text-sm text-muted-foreground">
+                      Sábados: 9:00 AM - 2:00 PM
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Map placeholder */}
