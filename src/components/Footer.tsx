@@ -40,15 +40,21 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-primary-bright shrink-0" />
-                <span className="font-body text-sm text-primary-foreground/70">
-                  +1 (555) 123-4567
-                </span>
+                <a
+                  href="tel:+50312345678"
+                  className="font-body text-sm text-primary-foreground/70 hover:text-primary-bright transition-colors duration-300"
+                >
+                  +503 1234-5678
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-primary-bright shrink-0" />
-                <span className="font-body text-sm text-primary-foreground/70">
+                <a
+                  href="mailto:info@dentalclinic.com"
+                  className="font-body text-sm text-primary-foreground/70 hover:text-primary-bright transition-colors duration-300"
+                >
                   info@dentalclinic.com
-                </span>
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin
