@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-dental.webp";
 
 const HeroSection = () => {
@@ -40,18 +41,18 @@ const HeroSection = () => {
             className="mt-10 flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <a
-              href="#contacto"
+            <Link
+              to="/contacto"
               className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-primary-bright text-primary-foreground font-body font-semibold text-base hover:brightness-110 transition-all duration-300 shadow-elegant"
             >
               Agendar Cita
-            </a>
-            <a
-              href="#servicios"
+            </Link>
+            <Link
+              to="/servicios"
               className="inline-flex items-center justify-center px-8 py-4 rounded-lg border-2 border-primary-foreground/30 text-primary-foreground font-body font-semibold text-base hover:bg-primary-foreground/10 transition-all duration-300"
             >
               Conocer Servicios
-            </a>
+            </Link>
           </div>
         </div>
       </div>
