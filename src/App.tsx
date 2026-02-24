@@ -11,6 +11,7 @@ import Servicios from "./pages/Servicios";
 import Promociones from "./pages/Promociones";
 import Blog from "./pages/Blog";
 import Contacto from "./pages/Contacto";
+import AntesYDespues from "./pages/AntesYDespues";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/servicios" element={<Servicios />} />
+          <Route path="/antes-y-despues" element={<AntesYDespues />} />
           <Route path="/promociones" element={<Promociones />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contacto" element={<Contacto />} />
